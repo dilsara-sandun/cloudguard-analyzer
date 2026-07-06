@@ -1,0 +1,6 @@
+boto3
+moto[all]
+networkx
+matplotlib
+jinja2
+pytest
