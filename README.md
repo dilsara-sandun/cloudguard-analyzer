@@ -92,43 +92,37 @@ A comprehensive, client-ready HTML security report detailing:
 
 cloudguard-analyzer/
 
-│
-
 ├── .github/workflows/
 
-│   └── ci.yml                  # Autonomous GitHub Actions CI/CD Pipeline
+│   └── ci.yml                  # Automated CI pipeline (GitHub Actions)
 
 ├── src/
 
 │   ├── templates/
 
-│   │   └── report\_template.html # Jinja2 HTML Reporting Template
+│   │   └── report\_template.html # Jinja2 HTML report template
 
-│   ├── mock\_environment.py     # Moto-based AWS simulation engine
+│   ├── mock\_environment.py     # Moto-based AWS simulation
 
-│   ├── iam\_fetcher.py          # Boto3 logic for contextual data retrieval
+│   ├── iam\_fetcher.py          # boto3 data extraction logic
 
-│   ├── escalation\_rules.py     # Deterministic rules engine (Core Logic)
+│   ├── escalation\_rules.py     # Detection rules engine
 
-│   ├── graph\_builder.py        # NetworkX attack topology generator
+│   ├── graph\_builder.py        # Attack-path graph generator
 
-│   └── report\_generator.py     # Audit reporting compilation pipeline
+│   └── report\_generator.py     # HTML report compiler
 
 ├── tests/
 
-│   └── test\_escalation.py      # Quality assurance test suite
+│   └── test\_escalation.py      # Test suite
 
-├── reports/                    # Auto-generated security artifacts
+├── reports/                    # Auto-generated output
 
-├── requirements.txt            # Project dependency manifestations
+├── requirements.txt            # Dependencies
 
-└── main.py                     # Main execution runtime driver
+└── main.py                     # Entry point
 
 ```
-
-
-
-\---
 
 
 
